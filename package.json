@@ -1,0 +1,32 @@
+{
+  "name": "env-rotation-service",
+  "version": "1.0.0",
+  "description": "Automated secret rotation service with scheduling and webhook notifications",
+  "main": "src/index.js",
+  "bin": {
+    "rotate": "./src/index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "schedule": "node src/scheduler.js",
+    "test": "jest"
+  },
+  "keywords": ["secret", "rotation", "automation", "security"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^12.0.0",
+    "crypto-js": "^4.2.0",
+    "node-cron": "^3.0.3",
+    "inquirer": "^9.2.16",
+    "ora": "^5.4.1",
+    "prompt-sync": "^4.2.0",
+    "sql.js": "^1.10.3",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
